@@ -6,7 +6,7 @@ This is an example on how to retrieve parsed problem data from [Competitive Comp
 
 1. Clone this repository and `cd` into it.
 2. Run `npm install`.
-3. Customize `CP_HOME` (like `$HOME`, `~` for ubuntu or `F:`, `C:` for windows) `CP_FOLDER` (I use `ccode` as my cp folder) in `.env` where you want to store and input and expected files.
+3. Customize `CP_HOME` (like /home/user for ubuntu or `F:`, `C:` for windows) `CP_FOLDER` (I use `ccode` as my cp folder) in `.env` where you want to store and input and expected files.
 4. Run `npm start`.
 5. Go to a problem like [this](http://codeforces.com/problemset/problem/1/A) one, click on the green plus icon and look at the terminal where you ran `npm start`.
 
@@ -67,7 +67,7 @@ cat tempInp.txt > incp$cnt.txt
 cat tempExp.txt > expcp$cnt.txt
 ```
 
-I have created a shorcut for creating a new testcase using `F4` in vim.
+I have created a shortcut for creating a new testcase using `F4` in vim.
 
 ```vimrc
 autocmd FileType cpp map <F4> :!clear && bash ~/ccode/newtest.sh %<<CR>
